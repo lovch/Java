@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Array4_SortingWithoutAlgorithm_0_1_2_only {
+    public static void main(String[] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of Array");
+        n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the Array elements only 0, 1 and 2 values");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int c0 = 0;
+        int c1 = 0;
+        int c2 = 0;
+        int i;
+        for(i=0;i<n;i++) {
+            switch (arr[i]) {
+                case 0:
+                    c0++;
+                    break;
+                case 1:
+                    c1++;
+                    break;
+                case 2:
+                    c2++;
+                    break;
+            }
+        }
+        System.out.println(c0 + " " + c1 + " " + c2);
+        i=0;
+        while(c0 > 0)
+        {
+            arr[i] = 0;
+            i++;
+            c0--;
+        }
+        while(c1>0)
+        {
+            arr[i] = 1;
+            i++;
+            c1--;
+        }
+        while(c2>0)
+        {
+            arr[i] = 2;
+            i++;
+            c2--;
+        }
+        System.out.println("Printing final Array");
+        for (i=0;i<n;i++)
+        {
+            System.out.print(arr[i]+ " ");
+        }
+    }
+}
