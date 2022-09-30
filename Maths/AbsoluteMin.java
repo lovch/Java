@@ -13,6 +13,7 @@ public class AbsoluteMin {
     assert absMin(testnums) == 0;
 
     int[] numbers = {3, -10, -2};
+    int[] numbersarr = {3, -10, -2};
     System.out.println("absMin(" + Arrays.toString(numbers) + ") = " + absMin(numbers));
   }
 
