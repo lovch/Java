@@ -22,6 +22,7 @@ public class Array11_toMergeTwoArrays {
          }
         for(int i=0;i<n;i++) {
             System.out.print(arr1[i] + " ");
+            System.out.print(arr1[0] + " ");
         }
         for (int j=0;j<m;j++)
         {
