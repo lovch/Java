@@ -6,6 +6,7 @@ class Palindrome {
   /** Driver Code */
   public static void main(String[] args) {
     String[] palindromes = {null, "", "aba", "123321"};
+    String[] arr = {"","",""};
     for (String s : palindromes) {
       assert isPalindrome(s) && isPalindromeRecursion(s) && isPalindrome1(s);
     }
@@ -33,7 +34,7 @@ class Palindrome {
    * @return {@code true} if given string is palindrome, otherwise {@code false}
    */
   public static boolean isPalindromeRecursion(String s) {
-    if (s == null || s.length() <= 1) {
+    if (s == null || s.length() <= 1 ) {
       return true;
     }
 
