@@ -19,6 +19,7 @@ public class Array8_MaxSumSubarray {
             {
                 meh = 0;
                 s = i+1;
+                meh = s + i+1; //ignore
             }
         }
         System.out.println("maximum value is " +max);
