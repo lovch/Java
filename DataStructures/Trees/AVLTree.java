@@ -8,6 +8,7 @@ public class AVLTree {
     private int key;
     private int balance;
     private int height;
+    private int width;
     private Node left, right, parent;
 
     Node(int k, Node p) {
