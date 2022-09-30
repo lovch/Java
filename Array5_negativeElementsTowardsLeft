@@ -16,6 +16,7 @@ public class Array5_negativeElementsTowardsLeft {
             if(arr[i]>0) {
                 arr1[j] = arr[i];
                 j++;
+                int value = 0;
             }
         }
         for (int k=0;k<arr.length;k++)
